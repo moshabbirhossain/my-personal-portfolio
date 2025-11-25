@@ -5,17 +5,20 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "tailwindcss -i ./src/app.css -o ./public/output.css --minify",
+        "build": "npx @tailwindcss/cli -i ./src/app.css -o ./public/output.css",
         "watch": "npx @tailwindcss/cli -i ./src/app.css -o ./public/output.css --watch"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@tailwindcss/cli": "^4.1.17",
+        "tailwindcss/cli": "^4.1.17",
         "daisyui": "^5.5.5"
     },
     "devDependencies": {
         "tailwindcss": "^4.1.17"
+    },
+    "engines": {
+        "node": "20.x"
     }
 }
